@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html> <!-- HTML Opening Tag -->
   <head> <!-- HTML Header Opening Tag -->
-    <style>
-      body {
-        background-color: lightblue;
-      }
-
-      h1 {
-        color: white;
-        text-align: center;
-      }
-
-      p {
-        font-family: verdana;
-        font-size: 20px;
-      }
-      .page-header {
-        min-height: 20px;
-        background-color: blue;
-      }
-      .page-header li a{
-        color:white;
-      }
-      .page-mainbody{
-        min-height: 400px;
-        background-color: grey;
-      }
-      .page-footer{
-        min-height: 200px;
-        background-color: blue;
-      }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
+    <!--<script src="bootstrap/js/bootstrap.js"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <title>Home</title>
   </head> <!-- HTML Header Closing Tag -->
   <body> <!-- HTML Body Opening Tag -->
-    <div class="page-header">
-      <!-- My Page Menu -->
-      <ul>
-        <li><a href="/Users/tamba.s.lamin/Public/tambalamin.me/index.html">Home</a></li>
-        <li><a href="/Users/tamba.s.lamin/Public/tambalamin.me/about.html">About Me</a></li>
-        <li><a href="/Users/tamba.s.lamin/Public/tambalamin.me/contact.html">Contact</a></li>
-        <li><a href="/Users/tamba.s.lamin/Public/tambalamin.me/subscribe.html">Subscribe</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.HTML">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photos.HTML">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="subscribe.html">Subscribe</a>
+        </li>
       </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <div class="page-mainbody">
-      <!-- My Page main body content -->
-      <h1>Home</h1> <!-- HTML Headline/Header Tag -->
-      <p>This is a placeholder for my main body content</p> <!-- HTML paragraph Tag -->
+  </div>
+</nav>
+
+
+    <div class="container">
+
+      <div class="jumbotron text-center">
+      <h1>Welcome to Tamba Lamin</h1>
+      <img src="https://tambalamin.me/sites/default/files/styles/max_650x650/public/2021-03/crime-bill-2.jpeg" class="img-fluid" alt="Cyber crimes">
+      <p>Thanks for visiting</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+      </div>
     </div>
-    <div class="page-footer">
-      <!-- My Page footer -->
-      <p>This is a placeholder for my Footer</p>
-    </div>
+
+<div class="container bg-light">
+    <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1">Subscribe</a>
+    </li>
+  </ul>
+</div>
   </body> <!-- HTML Body Closing Tag -->
 </html> <!-- HTML Closing Tag -->
